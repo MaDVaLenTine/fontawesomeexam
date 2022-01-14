@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+    .collection{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #515E7B;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 10;
+        transition: .3s;
+    }
+    .collection .item{
+        padding: 20px 0;
+    }
+    .menu_bar{
+        display: block;
+        position: relative;
+        z-index: 3;
+    }
+    #menu:checked ~ .collection{
+        left: 0;
+    }
+    form{
+        opacity: 0;
+    }
+    .header_1{
+        display: flex;
+        position: relative;
+        img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.idk{
+    background: #ddd;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .idk1{
+        margin: 40px 0; 
+        width: 22%;
+        i{
+            font-size: 40px;
+            &:nth-child(odd){
+                color: dodgerblue;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .idk{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .idk1{
+            margin: 40px 0; 
+            width: 100%;
+        }
+    }
+}
+
+    
